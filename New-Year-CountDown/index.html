@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Count Down 2025</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container">
+        <span style="margin-bottom: 20px;">Countdown to New Year</span>
+        <h1>2025</h1>
+
+    <div id="countdown" class="countdown">
+        <div class="time">
+            <h2 id="days">00</h2>
+            <small>Days</small>
+        </div>
+
+        <div class="time">
+            <h2 id="hours">00</h2>
+            <small>Hours</small>
+        </div>
+
+        <div class="time">
+            <h2 id="minutes">00</h2>
+            <small>Minutes</small>
+        </div>
+
+        <div class="time">
+            <h2 id="seconds">00</h2>
+            <small>Seconds</small>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/snowfall.min.js"></script>
+    <script>
+        snowFall.snow(document.querySelector("body"), {
+        round: true,
+        minSize: 1,
+        maxSize: 5,
+        shadow: true,
+        flakeCount: 50,
+        flakeColor: "#c7dfea"
+        });
+    </script>
+</body>
+</html>
