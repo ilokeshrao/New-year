@@ -1,4 +1,4 @@
-# New Year Countdown 2025
+# New Year Countdown 2026
 
 This project is a simple countdown timer that displays the time remaining until the New Year 2025. It includes a snow animation for a festive touch.
 
