@@ -1,0 +1,30 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main  # Change if you deploy from a different branch
+
+env:
+CI:false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build the Project
+        run: npm run build
+
+      - name: Deploy to Vercel
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod --confirm
